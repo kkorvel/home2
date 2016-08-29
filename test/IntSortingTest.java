@@ -15,7 +15,7 @@ public class IntSortingTest {
     * 
     * @param a
     *           sorted (?) array
-    * @throws IllegalArgumentException
+    * @return false
     *            if an array is not ordered
     */
    static boolean inOrder(int[] a) {
