@@ -2,6 +2,7 @@
 
 See on teise kodutöö failide hoidla, mida saab kasutada ainult algseks lugemiseks.
 Töötamiseks looge endale isiklik repositoorium, näiteks (privaatne) 'fork' bitbucket serverisse, millest saate luua klooni oma arvutisse.
+Ülesande kirjelduse leiate: http://enos.itcollege.ee/~jpoial/algoritmid/aa_prakt2newest.html
 
 ## Näidete kasutamine käsurealt ##
 #### Kompileerimine: ####
