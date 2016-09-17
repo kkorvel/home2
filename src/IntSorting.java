@@ -107,9 +107,32 @@ public class IntSorting {
     * @param a
     *           array to be sorted
     */
+   //Siin on kahendpistemeetod, mõtteid sain siit: http://stackoverflow.com/questions/3075752/binary-insertion-sort-algorithm
    public static void binaryInsertionSort(int[] a) {
       // TODO!!! Your method here!
-   }
+      for (int i = 0; i < a.length; i++){
+         int ajutine = a[i];
+         int vasak = 0;
+         int parem = i;
+            while (vasak < parem){
+               int keskmine = (vasak + parem) / 2;
+               if (ajutine >= a[keskmine])
+                  vasak = keskmine +1;
+               else
+                  parem = keskmine;
+            }
+            for (int j = i; j > vasak; j--){
+               vahetamine(a,j-1,j);
+            }
+      }
+//Vahetab asukohad!
+      }
+      public static void vahetamine( int a[], int i, int j){
+         int k = a[i];
+         a[i] = a [j];
+         a[j] = k;
+      }
+
 
    /**
     * Sort a part of the array using quicksort method.
